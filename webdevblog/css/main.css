@@ -1,0 +1,250 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: #f6f6f6;
+    padding: 22px 0;
+}
+
+.header-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between
+}
+
+.header-container a{
+    color: black;
+    font-size: 16px;
+    padding: 27px 6px;
+    margin-right: 63px;
+}
+
+.header-container a:hover{
+    background: #ffea00;
+}
+
+#menu-checkbox{
+    display: none;
+}
+
+ul{
+    display: flex;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+/* другий блок */
+
+.top-slide{
+    background: url(../img/slider_bg.jpg) no-repeat center top / cover;
+    padding-top: 120px;
+    padding-bottom: 280px;
+}
+.top-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.top-slide h2{
+    background: #ffea00;
+    display: inline;
+    font-size: 70px;
+    padding: 0 13px;
+}
+
+.top-slide :nth-child(2){
+    margin-bottom: 20px;
+}
+.top-slide p{
+    background: #414146;
+    display: inline;
+    font-size: 24px;
+    padding: 0 13px;
+    color: #fff
+}
+
+/* Третій блок */
+
+.specialize-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.specialize-container h3{
+    font-size: 36px;
+}
+.specialize-container p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.first-p{
+    font-size: 20px;
+    color: #fff;
+}
+.bottom-card{
+    background: #414146;
+    position: relative;
+    top: -30px;
+}
+.specialize-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Портфоліо */
+
+.portfolio{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center
+}
+.portfolio h4{
+    background: #424147;
+    padding: 0 10px;
+    font-size: 25px;
+    display: inline-block;
+    color: #f5e10a;
+    margin-bottom: 30px;
+}
+.portfolio p{
+    color: #414146;
+    font-size: 20px;
+}
+
+.toggles button{
+    display: inline-block;
+    padding: 0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#000;
+    text-align:center;
+    transition: all 0.15s;
+}
+.toggles button:hover{
+    color:#000000;
+    border-color:rgb(241, 208, 208);
+}
+.toggles button:active{
+    color:#3400c2;
+    border-color:#4400ff;
+}
+.toggles button:after{
+    content: ' / '
+}
+.toggles button:last-child:after{
+    content: ''
+}
+.posts{
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+body{
+    height: 4000px;
+}
+
+
+
+@media only screen and (max-width : 480px) {
+    .header-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu{
+        display: none;
+    }
+    .main-menu li{
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+    .main-menu a{
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #000;
+        margin-top: 25px;
+    }
+    .toggle-button:after{
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu{
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+        content: attr(data-close);
+    }
+    .header-container a{
+        margin-right: -65px;
+    }
+    .main-menu{
+        position: relative;
+        top: 30px;
+        right: 60px;
+    }
+    .top-slide {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .top-slide h2{
+        font-size: 32px;
+    }
+    .top-slide p {
+        font-size: 16px;
+    }
+    .specialize-container p{
+        font-size: 16px;
+    }
+    .specialize-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottom-card{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .posts{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto;
+    }
+    .toggles button {
+        font-size: 19px;
+        margin: 1px 5px;
+        background: #cdd4f7;
+    }
+}
