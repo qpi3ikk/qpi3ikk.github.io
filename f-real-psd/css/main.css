@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url(../libs/normalize-css/normalize.css);
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url("../fonts/Roboto-Black.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-BlackItalic';
+  src: url("../fonts/Roboto-BlackItalic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-BoldItalic';
+  src: url("../fonts/Roboto-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Italic';
+  src: url("../fonts/Roboto-Italic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../fonts/Roboto-Light.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url("../fonts/Roboto-LightItalic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Roboto-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-MediumItalic';
+  src: url("../fonts/Roboto-MediumItalic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url("../fonts/Roboto-Thin.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  src: url("../fonts/Roboto-ThinItalic.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Roboto-Regular; }
+
+.container {
+  width: 992px;
+  margin: auto; }
+
+.consalt-button a {
+  text-decoration: none;
+  font-family: Roboto-Black;
+  font-size: 16px;
+  color: #fff;
+  background: #e9c047;
+  padding: 23px 35px 22px 37px; }
+  .consalt-button a:hover {
+    -webkit-box-shadow: 0px 0px 2px 2px #E9C047;
+            box-shadow: 0px 0px 2px 2px #E9C047; }
+
+#toTop {
+  width: 60px;
+  background: #e9c047;
+  padding: 2px 5px 2px 5px;
+  position: fixed;
+  bottom: 0;
+  /* отступ кнопки от нижнего края страницы*/
+  left: 15%;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-family: Roboto-Light;
+  font-size: 11px; }
+
+h2 {
+  font-family: Roboto-Bold;
+  font-size: 36px;
+  color: #364457; }
+
+h3 {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+  color: #364457; }
+
+.container-top {
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.top-header {
+  position: relative;
+  width: 962px;
+  height: 520px;
+  margin: auto;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .top-header .left {
+    background-image: url(../img/bg-header.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    -webkit-background-size: auto 410px;
+            background-size: auto 410px; }
+    .top-header .left img {
+      position: absolute;
+      height: 160px;
+      width: auto; }
+  .top-header .right {
+    padding-left: 20px;
+    background: #364457; }
+    .top-header .right .contact-info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .top-header .right .contact-info .phone,
+      .top-header .right .contact-info .addres {
+        font-size: 16px;
+        color: #fff; }
+      .top-header .right .contact-info img {
+        height: 18px;
+        padding-right: 12px; }
+    .top-header .right h1 {
+      font-family: Roboto-Light;
+      font-size: 40px;
+      color: #fff;
+      padding-top: 93px;
+      padding-bottom: 40px; }
+    .top-header .right p {
+      font-size: 16px;
+      color: #fff;
+      padding-bottom: 57px; }
+  .top-header .mouse {
+    position: absolute;
+    top: 440px;
+    left: 461px;
+    grid-column: 2 span;
+    text-align: center; }
+    .top-header .mouse img {
+      height: 40px; }
+
+nav {
+  width: 100%;
+  background: #f7f8f3;
+  height: 50px; }
+  nav .container ul {
+    list-style: none; }
+  nav .container > ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    nav .container > ul li {
+      position: relative; }
+      nav .container > ul li a {
+        display: block;
+        background: #f7f8f3;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #364457;
+        text-decoration: none;
+        text-transform: uppercase; }
+        nav .container > ul li a:hover {
+          border-bottom: 5px solid #e9c047;
+          padding-bottom: 5px; }
+        nav .container > ul li a i {
+          padding-left: 15px; }
+      nav .container > ul li ul {
+        position: absolute;
+        min-width: 118px;
+        min-height: 30px;
+        display: none; }
+        nav .container > ul li ul li a {
+          font-size: 12px;
+          background: #efd382;
+          padding-top: 10px;
+          padding-bottom: 13px;
+          padding-left: 10px; }
+          nav .container > ul li ul li a:hover {
+            background: #e9c047; }
+      nav .container > ul li:hover > ul {
+        display: block; }
+
+.navbar-fixed {
+  position: fixed;
+  top: -50px; }
+
+#section-a {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background: #f7f8f3; }
+  #section-a .business-guard {
+    display: grid;
+    grid-template-columns: 422px 578px; }
+    #section-a .business-guard .guard-left h2 {
+      padding-top: 120px; }
+    #section-a .business-guard .guard-left p {
+      font-size: 14px;
+      color: #364457;
+      padding: 45px 80px 100px 0; }
+    #section-a .business-guard .guard-left .up-button {
+      padding-top: 165px; }
+    #section-a .business-guard .guard-right .guard-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      padding-top: 50px; }
+      #section-a .business-guard .guard-right .guard-cards .guard-card {
+        background: #d6dee6;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 150px; }
+        #section-a .business-guard .guard-right .guard-cards .guard-card img {
+          height: 37px;
+          padding: 20px 0 0 20px; }
+        #section-a .business-guard .guard-right .guard-cards .guard-card h3 {
+          padding: 20px; }
+
+#section-b {
+  padding-bottom: 50px;
+  background: #f7f8f3;
+  height: 550px; }
+  #section-b .personal-guard {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #section-b .personal-guard .guard-left {
+      padding-right: 155px; }
+      #section-b .personal-guard .guard-left h2 {
+        padding: 120px 0 0 0; }
+      #section-b .personal-guard .guard-left p {
+        font-size: 14px;
+        color: #364457;
+        padding: 45px 0px 100px 0; }
+    #section-b .personal-guard .guard-right .guard-cards {
+      padding-top: 50px;
+      padding-left: 20px;
+      grid-template-columns: 1fr; }
+      #section-b .personal-guard .guard-right .guard-cards .guard-card {
+        padding-top: 13px;
+        display: grid;
+        grid-template-columns: 50px 350px; }
+        #section-b .personal-guard .guard-right .guard-cards .guard-card .img {
+          background: #e9c047;
+          height: 50px;
+          height: 50px;
+          text-align: center;
+          -webkit-align-content: center;
+              -ms-flex-line-pack: center;
+                  align-content: center; }
+          #section-b .personal-guard .guard-right .guard-cards .guard-card .img img {
+            width: 40px;
+            height: 40px;
+            padding-top: 5px; }
+        #section-b .personal-guard .guard-right .guard-cards .guard-card h3 {
+          background: #d6dee6;
+          text-transform: uppercase;
+          padding-top: 18px;
+          padding-left: 16px; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
