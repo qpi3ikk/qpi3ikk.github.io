@@ -282,6 +282,101 @@ nav {
           padding-top: 18px;
           padding-left: 16px; }
 
+#section-c {
+  background: #f7f8f3;
+  height: 650px; }
+  #section-c .container-wide {
+    padding-top: 40px;
+    background: url(../img/bg-c.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    width: 1140px;
+    height: 600px;
+    margin: auto; }
+    #section-c .container-wide .about {
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns: 450px 532px; }
+      #section-c .container-wide .about .about-left {
+        padding-right: 78px; }
+        #section-c .container-wide .about .about-left h2 {
+          padding-bottom: 25px; }
+      #section-c .container-wide .about .about-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px 40px; }
+        #section-c .container-wide .about .about-right .about-block-a .head,
+        #section-c .container-wide .about .about-right .about-block-a .head-d,
+        #section-c .container-wide .about .about-right .about-block-b .head,
+        #section-c .container-wide .about .about-right .about-block-b .head-d,
+        #section-c .container-wide .about .about-right .about-block-c .head,
+        #section-c .container-wide .about .about-right .about-block-c .head-d {
+          font-family: Roboto-Bold;
+          color: #e9c047;
+          padding-left: 15px; }
+        #section-c .container-wide .about .about-right .about-block-a .inf,
+        #section-c .container-wide .about .about-right .about-block-b .inf,
+        #section-c .container-wide .about .about-right .about-block-c .inf {
+          font-size: 16px;
+          padding-top: 15px; }
+        #section-c .container-wide .about .about-right .about-block-a .head {
+          font-size: 60px; }
+        #section-c .container-wide .about .about-right .about-block-b .head {
+          font-size: 50px; }
+        #section-c .container-wide .about .about-right .about-block-c .head {
+          font-size: 29px; }
+        #section-c .container-wide .about .about-right .about-block-a .head-d,
+        #section-c .container-wide .about .about-right .about-block-b .head-d {
+          font-family: Roboto-Regular;
+          font-size: 19px; }
+        #section-c .container-wide .about .about-right .about-block-c .head-d {
+          font-family: Roboto-Regular;
+          font-size: 29px; }
+        #section-c .container-wide .about .about-right .block-head {
+          border-left: 2px solid #e9c047; }
+
+#section-d {
+  background: #f7f8f3;
+  height: 600px; }
+  #section-d .team .team-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 88px; }
+    #section-d .team .team-top .team-left p {
+      padding-top: 30px;
+      padding-bottom: 42px; }
+    #section-d .team .team-top .team-right {
+      border-left: 3px solid #d6dee6; }
+      #section-d .team .team-top .team-right p {
+        padding: 0 45px 35px 35px; }
+      #section-d .team .team-top .team-right p:nth-child(2) {
+        padding-bottom: 0; }
+  #section-d .team .team-bottom {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 45px;
+       -moz-column-gap: 45px;
+            column-gap: 45px;
+    font-family: Roboto-Light;
+    font-size: 16px;
+    text-align: center; }
+    #section-d .team .team-bottom img {
+      width: 205px; }
+    #section-d .team .team-bottom .name {
+      text-transform: uppercase; }
+
+#section-e {
+  background: #f7f8f3;
+  height: 650px; }
+  #section-e .cases {
+    padding-top: 85px; }
+    #section-e .cases .cases-top p {
+      padding-top: 27px;
+      padding-right: 515px;
+      padding-bottom: 35px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
