@@ -209,8 +209,8 @@ nav {
   top: -50px; }
 
 #section-a {
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 65px;
+  padding-bottom: 20px;
   background: #f7f8f3; }
   #section-a .business-guard {
     display: grid;
@@ -246,6 +246,7 @@ nav {
   background: #f7f8f3;
   height: 550px; }
   #section-b .personal-guard {
+    padding-top: 35px;
     display: grid;
     grid-template-columns: 1fr 1fr; }
     #section-b .personal-guard .guard-left {
@@ -369,13 +370,42 @@ nav {
 
 #section-e {
   background: #f7f8f3;
-  height: 650px; }
+  height: 700px; }
   #section-e .cases {
     padding-top: 85px; }
     #section-e .cases .cases-top p {
       padding-top: 27px;
       padding-right: 515px;
       padding-bottom: 35px; }
+    #section-e .cases .cases-bottom .slickslider {
+      padding-bottom: 00px; }
+      #section-e .cases .cases-bottom .slickslider .case {
+        border-left: 1px solid #d6dee6;
+        border-right: 1px solid #d6dee67e; }
+        #section-e .cases .cases-bottom .slickslider .case .case-head {
+          font-family: Roboto-Light;
+          font-size: 26px;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background: url(../img/l-bg.png); }
+        #section-e .cases .cases-bottom .slickslider .case h4 {
+          font-family: Roboto-Bold;
+          font-size: 14px;
+          text-transform: uppercase;
+          padding-top: 14px;
+          padding-bottom: 10px;
+          padding-left: 10px; }
+        #section-e .cases .cases-bottom .slickslider .case p {
+          font-family: Roboto-Light;
+          font-size: 14px;
+          padding-left: 10px;
+          padding-right: 10px; }
+        #section-e .cases .cases-bottom .slickslider .case:hover {
+          cursor: pointer;
+          padding-bottom: 20px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
