@@ -60,7 +60,8 @@ h3 {
 }
     
 
-.container-top {
+#start {
+    position: relative;
     background: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +70,11 @@ h3 {
 
 .top-header {
     position: relative;
-    width: 962px;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     height: 520px;
     margin: auto;
     padding-top: 20px;
@@ -120,7 +125,7 @@ h3 {
     .mouse {
         position: absolute;
         top: 440px;
-        left: 461px;
+        left: 48%;
         grid-column: 2 span;
         text-align: center;
         img {
@@ -186,6 +191,7 @@ nav{
 .navbar-fixed {
     position: fixed;
     top: -($nav-height);
+    z-index: 1;
 }
 // тут
 
@@ -417,9 +423,9 @@ nav{
         }
         .cases-bottom {
             .slickslider {
-                padding-bottom: 00px;
+                padding-bottom: 0px;
                 .case {
-                    border-left: 1px solid $gray;
+                    border-left: 1px solid #d6dee67e;
                     border-right: 1px solid #d6dee67e;
                     .case-head {
                         
@@ -455,6 +461,120 @@ nav{
         }
     }
 }
+
+#section-f {
+    background: $m-bg;
+    height: 650px;
+    .prises {
+        .prises-top {
+            padding-top: 70px;
+            p {
+                padding-top: 25px;
+                padding-right: 670px;
+                padding-bottom: 20px;
+            }
+
+        }
+        .prises-bottom {
+            .prises-cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                .prises-card {
+                    padding: 25px 10px;
+                    transition: 0.3s ease;
+                    .card-head {
+                        background-size: cover;
+                        background-position: center;
+                        height: 95px;
+                        width: 200px;
+                        transition: 0.3s ease;
+                        h4 {
+                            padding-top: 40px;
+                            font-size: 16px;
+                            text-align: center;
+                            color: $gray;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &:nth-child(4) {
+                        .card-head {
+                            h4 {
+                                padding-top: 25px;
+                            }
+                        }
+                    }
+                    .card-info {
+                        display: flex;
+                        align-items: center;
+                        width: 198px;
+                        border-right: 1px solid #d6dee67e;
+                        border-left: 1px solid #d6dee67e;
+                        transition: 0.3s ease;
+                        i {
+                            padding: 13px;
+                            font-size: 22px;
+                            color: $grey-text;
+                            transition: 0.3s ease;
+                        }
+                        p {
+                            font-size: 11px;
+                            color: $grey-text;
+                            padding: 10px 0;
+                            width: 130px;
+                            transition: 0.3s ease;
+                        }
+                    }
+                    .card-bottom {
+                        background: $grey-text;
+                        color: $gray;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        width: 200px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        transition: 0.3s ease;
+                        i {
+                            padding-left: 10px;
+                        }
+                    }
+                    &:hover {
+                        padding: 0;
+                        padding-left: 5px;
+                        margin-left: 5px;
+                    .card-head {
+                        height: 110px;
+                        width: 220px;
+                        h4 {
+                            padding-top: 45px;
+                            font-size: 18px;
+                        }
+                    }
+                    &:nth-child(4) {
+                        .card-head {
+                            h4 {
+                                padding-top: 30px;
+                            }
+                        }
+                    }
+                    .card-info {
+                        width: 218px;
+                        p {
+                            padding:15px 25px 15px 5px;
+                        }
+                    }
+                    .card-bottom {
+                        width: 220px;
+                    }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
 
 
 

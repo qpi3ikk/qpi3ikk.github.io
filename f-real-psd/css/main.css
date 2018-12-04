@@ -94,7 +94,8 @@ h3 {
   font-size: 16px;
   color: #364457; }
 
-.container-top {
+#start {
+  position: relative;
   background: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -103,7 +104,12 @@ h3 {
 
 .top-header {
   position: relative;
-  width: 962px;
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100%;
   height: 520px;
   margin: auto;
   padding-top: 20px;
@@ -151,7 +157,7 @@ h3 {
   .top-header .mouse {
     position: absolute;
     top: 440px;
-    left: 461px;
+    left: 48%;
     grid-column: 2 span;
     text-align: center; }
     .top-header .mouse img {
@@ -206,7 +212,8 @@ nav {
 
 .navbar-fixed {
   position: fixed;
-  top: -50px; }
+  top: -50px;
+  z-index: 1; }
 
 #section-a {
   padding-top: 65px;
@@ -378,9 +385,9 @@ nav {
       padding-right: 515px;
       padding-bottom: 35px; }
     #section-e .cases .cases-bottom .slickslider {
-      padding-bottom: 00px; }
+      padding-bottom: 0px; }
       #section-e .cases .cases-bottom .slickslider .case {
-        border-left: 1px solid #d6dee6;
+        border-left: 1px solid #d6dee67e;
         border-right: 1px solid #d6dee67e; }
         #section-e .cases .cases-bottom .slickslider .case .case-head {
           font-family: Roboto-Light;
@@ -406,6 +413,103 @@ nav {
         #section-e .cases .cases-bottom .slickslider .case:hover {
           cursor: pointer;
           padding-bottom: 20px; }
+
+#section-f {
+  background: #f7f8f3;
+  height: 650px; }
+  #section-f .prises .prises-top {
+    padding-top: 70px; }
+    #section-f .prises .prises-top p {
+      padding-top: 25px;
+      padding-right: 670px;
+      padding-bottom: 20px; }
+  #section-f .prises .prises-bottom .prises-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    #section-f .prises .prises-bottom .prises-cards .prises-card {
+      padding: 25px 10px;
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+      #section-f .prises .prises-bottom .prises-cards .prises-card .card-head {
+        -webkit-background-size: cover;
+                background-size: cover;
+        background-position: center;
+        height: 95px;
+        width: 200px;
+        -webkit-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card .card-head h4 {
+          padding-top: 40px;
+          font-size: 16px;
+          text-align: center;
+          color: #d6dee6;
+          text-transform: uppercase; }
+      #section-f .prises .prises-bottom .prises-cards .prises-card:nth-child(4) .card-head h4 {
+        padding-top: 25px; }
+      #section-f .prises .prises-bottom .prises-cards .prises-card .card-info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 198px;
+        border-right: 1px solid #d6dee67e;
+        border-left: 1px solid #d6dee67e;
+        -webkit-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card .card-info i {
+          padding: 13px;
+          font-size: 22px;
+          color: #364457;
+          -webkit-transition: 0.3s ease;
+          -o-transition: 0.3s ease;
+          transition: 0.3s ease; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card .card-info p {
+          font-size: 11px;
+          color: #364457;
+          padding: 10px 0;
+          width: 130px;
+          -webkit-transition: 0.3s ease;
+          -o-transition: 0.3s ease;
+          transition: 0.3s ease; }
+      #section-f .prises .prises-bottom .prises-cards .prises-card .card-bottom {
+        background: #364457;
+        color: #d6dee6;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        -webkit-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card .card-bottom i {
+          padding-left: 10px; }
+      #section-f .prises .prises-bottom .prises-cards .prises-card:hover {
+        padding: 0;
+        padding-left: 5px;
+        margin-left: 5px; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-head {
+          height: 110px;
+          width: 220px; }
+          #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-head h4 {
+            padding-top: 45px;
+            font-size: 18px; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card:hover:nth-child(4) .card-head h4 {
+          padding-top: 30px; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info {
+          width: 218px; }
+          #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info p {
+            padding: 15px 25px 15px 5px; }
+        #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-bottom {
+          width: 220px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
