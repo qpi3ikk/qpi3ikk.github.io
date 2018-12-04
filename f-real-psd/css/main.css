@@ -432,6 +432,19 @@ nav {
       -o-transition: 0.3s ease;
       transition: 0.3s ease; }
       #section-f .prises .prises-bottom .prises-cards .prises-card .card-head {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
         -webkit-background-size: cover;
                 background-size: cover;
         background-position: center;
@@ -441,13 +454,9 @@ nav {
         -o-transition: 0.3s ease;
         transition: 0.3s ease; }
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-head h4 {
-          padding-top: 40px;
           font-size: 16px;
-          text-align: center;
           color: #d6dee6;
           text-transform: uppercase; }
-      #section-f .prises .prises-bottom .prises-cards .prises-card:nth-child(4) .card-head h4 {
-        padding-top: 25px; }
       #section-f .prises .prises-bottom .prises-cards .prises-card .card-info {
         display: -webkit-box;
         display: -webkit-flex;
@@ -499,11 +508,6 @@ nav {
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-head {
           height: 110px;
           width: 220px; }
-          #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-head h4 {
-            padding-top: 45px;
-            font-size: 18px; }
-        #section-f .prises .prises-bottom .prises-cards .prises-card:hover:nth-child(4) .card-head h4 {
-          padding-top: 30px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info {
           width: 218px; }
           #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info p {

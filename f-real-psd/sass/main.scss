@@ -483,24 +483,19 @@ nav{
                     padding: 25px 10px;
                     transition: 0.3s ease;
                     .card-head {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
                         background-size: cover;
                         background-position: center;
                         height: 95px;
                         width: 200px;
                         transition: 0.3s ease;
                         h4 {
-                            padding-top: 40px;
                             font-size: 16px;
-                            text-align: center;
                             color: $gray;
                             text-transform: uppercase;
-                        }
-                    }
-                    &:nth-child(4) {
-                        .card-head {
-                            h4 {
-                                padding-top: 25px;
-                            }
                         }
                     }
                     .card-info {
@@ -545,17 +540,6 @@ nav{
                     .card-head {
                         height: 110px;
                         width: 220px;
-                        h4 {
-                            padding-top: 45px;
-                            font-size: 18px;
-                        }
-                    }
-                    &:nth-child(4) {
-                        .card-head {
-                            h4 {
-                                padding-top: 30px;
-                            }
-                        }
                     }
                     .card-info {
                         width: 218px;
