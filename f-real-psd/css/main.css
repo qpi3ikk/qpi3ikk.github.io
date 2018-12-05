@@ -427,9 +427,26 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
     #section-f .prises .prises-bottom .prises-cards .prises-card {
-      padding: 25px 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border-right: 1px solid #d6dee67e;
+      border-left: 1px solid #d6dee67e;
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      height: 350px;
+      margin: 25px 10px;
       transition: 0.3s ease; }
       #section-f .prises .prises-bottom .prises-cards .prises-card .card-head {
         display: -webkit-box;
@@ -449,7 +466,7 @@ nav {
                 background-size: cover;
         background-position: center;
         height: 95px;
-        width: 200px;
+        width: 230px;
         -webkit-transition: 0.3s ease;
         -o-transition: 0.3s ease;
         transition: 0.3s ease; }
@@ -466,14 +483,9 @@ nav {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        width: 198px;
-        border-right: 1px solid #d6dee67e;
-        border-left: 1px solid #d6dee67e;
-        -webkit-transition: 0.3s ease;
-        -o-transition: 0.3s ease;
-        transition: 0.3s ease; }
+        width: 198px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-info i {
-          padding: 13px;
+          margin: 13px;
           font-size: 22px;
           color: #364457;
           -webkit-transition: 0.3s ease;
@@ -492,7 +504,7 @@ nav {
         color: #d6dee6;
         font-size: 14px;
         text-transform: uppercase;
-        width: 200px;
+        width: 230px;
         height: 50px;
         line-height: 50px;
         text-align: center;
@@ -502,18 +514,134 @@ nav {
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-bottom i {
           padding-left: 10px; }
       #section-f .prises .prises-bottom .prises-cards .prises-card:hover {
-        padding: 0;
-        padding-left: 5px;
-        margin-left: 5px; }
+        margin: 0;
+        margin-left: 10px;
+        height: 400px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-head {
           height: 110px;
-          width: 220px; }
+          width: 230px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info {
           width: 218px; }
-          #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info p {
-            padding: 15px 25px 15px 5px; }
+          #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info i {
+            margin: 15px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-bottom {
-          width: 220px; }
+          width: 230px; }
+
+#section-g {
+  background: url(../img/media-bg.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #section-g .media {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #section-g .media .media-left {
+      padding-top: 150px; }
+      #section-g .media .media-left h2 {
+        color: #fff;
+        padding-right: 180px;
+        padding-bottom: 55px; }
+      #section-g .media .media-left p {
+        font-family: Roboto-Regular;
+        color: #fff;
+        padding-right: 90px;
+        padding-bottom: 75px; }
+      #section-g .media .media-left .consalt-button {
+        padding-bottom: 145px; }
+    #section-g .media .media-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 15px;
+      padding-top: 110px; }
+      #section-g .media .media-right .media-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        #section-g .media .media-right .media-card img {
+          height: 60px;
+          width: 60px; }
+        #section-g .media .media-right .media-card p {
+          font-size: 12;
+          text-align: center;
+          color: #d4d8dc; }
+        #section-g .media .media-right .media-card:last-child {
+          grid-column: 2 / 3; }
+
+#section-j {
+  background: #f7f8f3;
+  height: 600px; }
+  #section-j .advice .advice-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #section-j .advice .advice-top .advice-top-left h2 {
+      padding-top: 100px;
+      padding-bottom: 30px; }
+    #section-j .advice .advice-top .advice-top-left p {
+      padding-right: 150px;
+      padding-bottom: 55px; }
+    #section-j .advice .advice-top .advice-top-right {
+      padding-top: 125px;
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 20px 450px;
+      grid-template-rows: 20px 20px 20px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-column-gap: 18px;
+         -moz-column-gap: 18px;
+              column-gap: 18px;
+      grid-template-areas: 'facebook    socia' 'instagram   socia' 'youtube     socia'; }
+      #section-j .advice .advice-top .advice-top-right .facebook-square {
+        grid-area: facebook; }
+      #section-j .advice .advice-top .advice-top-right .instagram {
+        grid-area: instagram; }
+      #section-j .advice .advice-top .advice-top-right .youtube {
+        grid-area: youtube; }
+      #section-j .advice .advice-top .advice-top-right .text-socia {
+        grid-area: socia;
+        padding: 15px 60px 20px 10px;
+        background: url(../img/socia-bg.jpg);
+        font-family: Roboto-Light;
+        font-size: 15px;
+        color: #d4d8dc; }
+      #section-j .advice .advice-top .advice-top-right i {
+        font-size: 20px;
+        color: #364457; }
+  #section-j .advice .advice-bottom .block-name {
+    padding-right: 55px;
+    font-size: 18px; }
+    #section-j .advice .advice-bottom .block-name span {
+      background: #e9c047;
+      font-size: 12px;
+      color: #fff;
+      padding: 0 3px; }
+  #section-j .advice .advice-bottom .see-all {
+    padding-top: 80px; }
+    #section-j .advice .advice-bottom .see-all .see-button a {
+      text-decoration: none;
+      font-family: Roboto-Black;
+      font-size: 16px;
+      color: #9098a0;
+      background: #f7f8f3;
+      padding: 23px 35px 22px 37px;
+      border: 2px solid #9098a0; }
+      #section-j .advice .advice-bottom .see-all .see-button a:hover {
+        color: #f7f8f3;
+        background: #9098a0;
+        -webkit-box-shadow: 0px 0px 2px 2px #f7f8f3;
+                box-shadow: 0px 0px 2px 2px #f7f8f3; }
+  #section-j .advice .advice-bottom .slick-slide:hover {
+    margin: 20px !important; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
