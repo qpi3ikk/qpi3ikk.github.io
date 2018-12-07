@@ -251,7 +251,7 @@ nav {
       padding-top: 165px; }
     #section-a .business-guard .guard-right .guard-cards {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 272px 272px;
       grid-gap: 20px;
       padding-top: 50px; }
       #section-a .business-guard .guard-right .guard-cards .guard-card {
