@@ -500,6 +500,7 @@ nav {
           padding-right: 10px; }
         #section-e .cases .cases-bottom .slickslider .case:hover {
           cursor: pointer;
+          border: none;
           padding-bottom: 20px;
           -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
                   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
@@ -533,8 +534,8 @@ nav {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      border-right: -1px solid #d6dee67e;
-      border-left: -1px solid #d6dee67e;
+      border-right: 1px solid #d6dee67e;
+      border-left: 1px solid #d6dee67e;
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease;
@@ -542,6 +543,8 @@ nav {
       margin: 25px 10px;
       transition: 0.3s ease; }
       #section-f .prises .prises-bottom .prises-cards .prises-card .card-head {
+        -webkit-background-size: cover;
+                background-size: cover;
         margin-left: -1px;
         margin-right: -1px;
         display: -webkit-box;
@@ -557,11 +560,10 @@ nav {
             -ms-flex-pack: center;
                 justify-content: center;
         text-align: center;
-        -webkit-background-size: cover;
-                background-size: cover;
+        background-size: cover;
         background-position: center;
         height: 95px;
-        width: 230px;
+        width: 232px;
         -webkit-transition: 0.3s ease;
         -o-transition: 0.3s ease;
         transition: 0.3s ease; }
@@ -618,9 +620,8 @@ nav {
         margin-left: 10px;
         height: 400px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-head {
-          margin: 0;
           height: 110px;
-          width: 230px; }
+          width: 232px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info {
           width: 218px; }
           #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info i {
