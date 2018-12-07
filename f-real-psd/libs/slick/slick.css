@@ -102,10 +102,12 @@
 {
     display: block;
     margin: 20px;
+    transition: 0.3s ease !important;
 }
 .slick-slide:hover {
     display: block;
     margin-top: 0;
+    margin-bottom: 0;
 }
 .slick-loading .slick-slide
 {

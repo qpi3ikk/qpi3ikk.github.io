@@ -7,8 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css"/>
 </head>
 <body>
     <header id="start">
@@ -28,26 +26,28 @@
                         <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
                     </div>
                 </div>
-                <div class="mouse"><img src="img/mouse.png" alt="mouse"></div>
+                <div class="mouse"><a href="#section-phantom
+                    "><img src="img/mouse.png" alt="mouse"></a></div>
             </div>
         </div>
         <nav id="navbar">
             <div class="container">
                 <ul>
-                    <li><a href="#">ПОСЛУГИ<i class="fas fa-arrow-down"></i></a>
+                    <li><a href="#section-a" class="alll">ПОСЛУГИ<i class="fas fa-arrow-down"></i></a>
                         <ul>
-                            <li><a href="#section-a">ДЛЯ БІЗНЕСУ</a></li>
-                            <li><a href="#section-b">ДЛЯ ГРОМАДЯН</a></li>
+                            <li><a href="#section-a" class="first">ДЛЯ БІЗНЕСУ</a></li>
+                            <li><a href="#section-b" class="second">ДЛЯ ГРОМАДЯН</a></li>
                         </ul></li>
                     <li><a href="#section-c">ПРО НАС</a></li>
-                    <li><a href="#">КЕЙСИ</a></li>
-                    <li><a href="#">ЦІНИ Й ТАРИфИ</a></li>
-                    <li><a href="#">ПОРАДИ</a></li>
-                    <li><a href="#">КОНТАКТИ</a></li>
+                    <li><a href="#section-e">КЕЙСИ</a></li>
+                    <li><a href="#section-f">ЦІНИ Й ТАРИфИ</a></li>
+                    <li><a href="#section-j">ПОРАДИ</a></li>
+                    <li><a href="#section-k">КОНТАКТИ</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <section id="section-phantom"></section>
     <section id="section-a">
         <div class="container business-guard">
             <div class="guard-left">
@@ -141,6 +141,7 @@
                 <div class="about-left">
                     <h2>Чому нам довіряють</h2>
                     <p>Запитайте в наших клієнтів, чому вони обрали нас, — ми впевнені в якості своєї роботи.</p>
+                    <div class="img"><img src="img/photo-section-c.png" alt=""></div>
                 </div>
                 <div class="about-right">
                     <div class="about-block-a">
@@ -173,6 +174,18 @@
                     </div>
                 </div>
             </div>
+            <div class="mini-footer">
+                <div class="arrow">
+                    <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arrow-info">
+                            <a href="#advokat" class="popup">
+                                <p>Потрібен адвокат?</p>
+                                <p>Телефонуйте: +38044 228 63 69</p>
+                            </a>
+                        </div>
+                </div>
+                
+            </div>
         </div>
     </section>
     <section id="section-d">
@@ -182,8 +195,8 @@
                     <h2>Наша команда</h2>
                     <p>Ми адвокати. А отже, гарантуємо компенсацію витрат на правову допомогу та збереження адвокатської таємниці.</p>
                     <div class="consalt-button">
-                    <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
-                </div>
+                        <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
+                    </div>
                 </div>
                 <div class="team-right">
                     <p>15 грудня 2017 року — знаковий день в історії українського права. Це день, коли були внесені зміни до процесуальних кодексів. Зазнала перетворень і система правосуддя.</p> 
@@ -284,7 +297,7 @@
                         <div class="card-info"><i class="fas fa-check-circle"></i><p>Адвокати працюють на результат</p></div>
                         <div class="card-info"><i class="fas fa-check-circle"></i><p>70% від суми виграшу отримуєте ви, 30% — команда наших 
                         адвокатів</p></div>
-                        <div class="card-bottom">Як це працює <i class="fas fa-arrow-right"></i></div>
+                        <div class="card-bottom"><a href="#">Як це працює <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                     <div class="prises-card">
                         <div class="card-head" style="background-image: url(img/calendar.jpg);"><h4>Абонентське оюслуговування</h4></div>
@@ -292,7 +305,7 @@
                         <div class="card-info"><i class="fas fa-check-circle"></i><p>Необмежена кількість робочих годин юриста в межах завдання</p></div>
                         <div class="card-info"><i class="fas fa-check-circle"></i><p>Фіксовані вартість та види робіт</p></div>
                         <div class="card-info"><i class="fas fa-check-circle"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
-                        <div class="card-bottom">Детальніше</div>
+                        <div class="card-bottom"><a href="#">Детальніше</a></div>
                     </div>
                 </div>
             </div>
@@ -378,11 +391,102 @@
             </div>
         </div>
     </section>
+    <section id="section-k">
+        <div class="k-top">
+            <div class="contacts-top">
+                <div class="map">
+                    <div class="opas">
+                        <p class="addr">київ, вул. Хорива, 39–41, оф. 80.</p>
+                        <p>+38044 228 63 69</p>
+                        <p class="mail">office@tsypin.partners</p>
+                    </div>
+                </div>
+                <div class="contacts-top-right">
+                    <h2>Потрібна консультація?</h2>
+                    <p>Телефонуйте та обирайте зручний час для зустрічі. Або замовляйте зворотній дзвінок, і ми зателефонуємо вам. </p>
+                    <div class="consalt-button">
+                        <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
+                    </div>
+                    <div class="call-button">
+                        <a href="#">ЗАМОВИТИ ДЗВІНОК</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="k-bottom">
+            <div class="container footer">
+                <div>
+                    <h4>для бізнесу</h4>
+                    <p>Представництво в суді</p>
+                    <p>Захист бізнесу та інтересів</p>
+                    <p>Супровід діяльності</p>
+                    <p>Війдкриття й закриття бізнесу</p>
+                    <p>Зовнішньоекономічна діяльність</p>
+                    <p class="fire"><a href="#advokat" class="popup"><img src="img/fire.png" alt=""> Терміновий виїзд адвоката</a></p>
+                </div>
+                <div>
+                    <h4>для громадян</h4>
+                    <p>Захист у кримінальних процесах</p>
+                    <p>Сімейні спори</p>
+                    <p>Майнові й земельні спори</p>
+                    <p>Спори з банками, страховими</p>
+                    <p>Спори з керуючою компанією</p>
+                    <p>Спори по ДТП</p>
+                    <p>Звернення до ЄСПЛ</p>
+                    <p>Послуги для іноземців</p>
+                </div>
+                <div>
+                    <h4>київ, вул. Хорива, 39–41, оф. 80.</h4>
+                    <p>+38044 228 63 69</p>
+                    <p class="mail">office@tsypin.partners</p>
+                    <p>Вакансії</p>
+                    <p>Правила користування сайтом</p>
+                    <p>Користувацька угода</p>
+                </div>
+                <div>
+                    <h4>Ми в соцмережах:</h4>
+                    <div class="media-icon"><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube"></i></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="hidden">
+        <div id="advokat">
+            <h2>Терміновий виїзд адвоката</h2>
+            <p>Наші адвокати завжди поруч. У будь-якій ситуації, будь де по Києву та області – наші досвідчені фахівці неодмінно приходять на допомогу. </p>
+            <div class="popup-info">
+                <div class="popup-info-block">
+                    <div><i class="fas fa-check-circle"></i></div>
+                    <div><p>24/7</p></div>
+                </div>
+                <div class="popup-info-block">
+                    <div><i class="fas fa-check-circle"></i></div>
+                    <div><p>ПО КИЄВУ ТА ОБЛАСТІ</p></div>
+                </div>
+                <div class="popup-info-block">
+                    <div><i class="fas fa-check-circle"></i></div>
+                    <div><p>БЕЗКОШТОВНО</p></div>
+                </div>
+                <div class="popup-info-block">
+                    <div><i class="fas fa-check-circle"></i></div>
+                    <div><p>15+ РОКІВ ДОСВІДУ</p></div>
+                </div>
+            </div>
+            <div class="popup-button">
+                <div class="consalt-button">
+                    <a href="#">ДІЗНАТИСЯ ПРО ЦЕ БІЛЬШЕ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 <script src="libs/slick/slick.min.js"></script>
+<script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <div id="toTop"> <i class="fas fa-arrow-up">Нагору</i></div>
 </body>
 </html>

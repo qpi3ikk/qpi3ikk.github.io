@@ -1,26 +1,12 @@
-// Плаваюче меню
-(function($) { 
-    "use strict";
-
-    var $navbar = $("#navbar"),
-        y_pos = $navbar.offset().top,
-        height = $navbar.height();
-
-    $(document).scroll(function() {
-        var scrollTop = $(this).scrollTop();
-
-        if (scrollTop > y_pos + height) {
-            $navbar.addClass("navbar-fixed").animate({
-                top: 0
-            });
-        } else if (scrollTop <= y_pos) {
-            $navbar.removeClass("navbar-fixed").clearQueue().animate({
-                top: "-48px"
-            }, 0);
-        }
-    });
-
-})(jQuery, undefined);
+// плаваюче меню
+var offset = $('#navbar').offset();
+$(window).scroll(function(){
+   //$('#mine').text($(document).scrollTop());
+  $('#navbar').addClass('fixed-nav');
+  if($(document).scrollTop() < 553){
+         $('#navbar').removeClass('fixed-nav');
+  }
+});
 
 // кнопка вверх
 $(function() {
@@ -47,10 +33,10 @@ $(function() {
      
 });
 
-// Слайдер
+
 
 jQuery(function($){
-
+    // Перший слайдер
     $(document).ready(function(){
         $('.slickslider').slick({
             centerPadding: '60px',
@@ -78,9 +64,11 @@ jQuery(function($){
         });
     });
 
+    // Другий слайдер
     $(document).ready(function(){
         $('.advice-bottom').slick({
             centerPadding: '60px',
+            infinite: false,
             slidesToShow: 3,
             responsive: [
                 {
@@ -104,5 +92,77 @@ jQuery(function($){
             ]
         });
     });
-    
+    // Попап
+    $(document).ready(function() {
+        $(".popup").magnificPopup();
+    });
 });
+// Показати-скрити блоки
+$(document).ready(function() {
+ 
+    $(".first").click(function() {
+        $("#section-b").css({"display":"none"});
+        $("#section-a").css({"display":"block"});
+        $("#section-g").css({"display":"block"});
+    });
+
+    $(".second").click(function() {
+        $("#section-a").css({"display":"none"});
+        $("#section-b").css({"display":"block"});
+        $("#section-g").css({"display":"none"});
+    });
+
+    $(".alll").click(function() {
+        $("#section-a").css({"display":"block"});
+        $("#section-b").css({"display":"block"});
+        $("#section-g").css({"display":"block"});
+    });
+ 
+});
+
+// Відстеження активного меню
+jQuery(window).scroll(function(){
+    var $sections = $('section');
+$sections.each(function(i,el){
+   var top  = $(el).offset().top-100;
+   var bottom = top +$(el).height();
+   var scroll = $(window).scrollTop();
+   var id = $(el).attr('id');
+   if( scroll > top && scroll < bottom){
+       $('a.active').removeClass('active');
+       $('a[href="#'+id+'"]').addClass('active');
+
+   }
+})
+});
+// Плавна перемотка меню
+
+$("nav").on("click","a", function (event) {
+   // исключаем стандартную реакцию браузера
+   event.preventDefault();
+
+   // получем идентификатор блока из атрибута href
+   var id  = $(this).attr('href'),
+
+   // находим высоту, на которой расположен блок
+       top = $(id).offset().top;
+    
+   // анимируем переход к блоку, время: 800 мс
+   $('body,html').animate({scrollTop: top}, 800);
+});
+
+// Плавна перемотка нарисованої мишки
+
+$(".mouse").on("click","a", function (event) {
+    // исключаем стандартную реакцию браузера
+    event.preventDefault();
+ 
+    // получем идентификатор блока из атрибута href
+    var id  = $(this).attr('href'),
+ 
+    // находим высоту, на которой расположен блок
+        top = $(id).offset().top;
+     
+    // анимируем переход к блоку, время: 800 мс
+    $('body,html').animate({scrollTop: top}, 800);
+ });
