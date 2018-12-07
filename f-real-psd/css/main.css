@@ -533,8 +533,8 @@ nav {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      border-right: 1px solid #d6dee67e;
-      border-left: 1px solid #d6dee67e;
+      border-right: -1px solid #d6dee67e;
+      border-left: -1px solid #d6dee67e;
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease;
@@ -542,6 +542,8 @@ nav {
       margin: 25px 10px;
       transition: 0.3s ease; }
       #section-f .prises .prises-bottom .prises-cards .prises-card .card-head {
+        margin-left: -1px;
+        margin-right: -1px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -609,12 +611,14 @@ nav {
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-bottom i {
           padding-left: 10px; }
       #section-f .prises .prises-bottom .prises-cards .prises-card:hover {
+        border: none;
         -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
                 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
         margin: 0;
         margin-left: 10px;
         height: 400px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-head {
+          margin: 0;
           height: 110px;
           width: 230px; }
         #section-f .prises .prises-bottom .prises-cards .prises-card:hover .card-info {
@@ -819,16 +823,16 @@ nav {
           #section-k .k-bottom .footer div .media-icon i:hover {
             cursor: pointer;
             color: #e9c047; }
+      #section-k .k-bottom .footer div a {
+        color: #d6dee6;
+        font-size: 16px; }
+        #section-k .k-bottom .footer div a:hover {
+          color: #e9c047; }
       #section-k .k-bottom .footer div .fire {
         padding-top: 15px; }
-        #section-k .k-bottom .footer div .fire a {
-          text-decoration: none;
-          color: #d6dee6;
-          font-size: 16px; }
-          #section-k .k-bottom .footer div .fire a:hover {
-            color: #e9c047; }
       #section-k .k-bottom .footer div .mail {
-        border-bottom: 2px solid #e9c047;
+        font-size: 14px;
+        border-bottom: 2px solid #e9c047 !important;
         width: 145px; }
 
 .hidden {
