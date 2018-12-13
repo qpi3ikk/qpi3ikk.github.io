@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    
+});
+
 // плаваюче меню
 var offset = $('#navbar').offset();
 $(window).scroll(function(){
@@ -8,116 +12,115 @@ $(window).scroll(function(){
   }
 });
 
-// кнопка вверх
-$(function() {
- 
-    $(window).scroll(function() {
-     
-    if($(this).scrollTop() != 0) {
-     
-    $('#toTop').fadeIn();
-     
-    } else {
-     
-    $('#toTop').fadeOut();
-     
-    }
-     
-    });
-     
-    $('#toTop').click(function() {
-     
-    $('body,html').animate({scrollTop:0},800);
-     
-    });
-     
-});
-
 
 
 jQuery(function($){
-    // Перший слайдер
+    // gamburger
+    $('#gamburger').click(function() {
+        $('#gamburger').toggleClass('fa-times');
+        $('nav').toggleClass('show');
+    });
+    
+    // кнопка вверх
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {   
+            $('#toTop').fadeIn();   
+        } else {   
+            $('#toTop').fadeOut();   
+        }   
+    });   
+    $('#toTop').click(function() { 
+        $('body,html').animate({scrollTop:0},800);  
+    });
+    
+        // Перший слайдер
     $(document).ready(function(){
         $('.slickslider').slick({
             centerPadding: '60px',
             slidesToShow: 3,
             responsive: [
                 {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
+                    arrows: true,
+                    centerMode: false,
                     centerPadding: '40px',
-                    slidesToShow: 3
+                    slidesToShow: 1
                 }
                 },
                 {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
+                    arrows: true,
+                    centerMode: false,
                     centerPadding: '40px',
                     slidesToShow: 1
                 }
                 }
             ]
         });
-    });
-
-    // Другий слайдер
-    $(document).ready(function(){
+        // Другий слайдер
         $('.advice-bottom').slick({
             centerPadding: '60px',
             infinite: false,
             slidesToShow: 3,
             responsive: [
                 {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
+                    arrows: true,
+                    centerMode: false,
                     centerPadding: '40px',
-                    slidesToShow: 3
+                    slidesToShow: 1
                 }
                 },
                 {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
+                    arrows: true,
+                    centerMode: false,
                     centerPadding: '40px',
                     slidesToShow: 1
                 }
                 }
             ]
         });
-    });
-    // Попап
-    $(document).ready(function() {
+        // Попап
         $(".popup").magnificPopup();
-    });
-});
-// Показати-скрити блоки
-$(document).ready(function() {
- 
-    $(".first").click(function() {
-        $("#section-b").css({"display":"none"});
-        $("#section-a").css({"display":"block"});
-        $("#section-g").css({"display":"block"});
-    });
 
-    $(".second").click(function() {
-        $("#section-a").css({"display":"none"});
-        $("#section-b").css({"display":"block"});
-        $("#section-g").css({"display":"none"});
-    });
+        // Показати-скрити блоки
+        $(".first").click(function() {
+            $("#section-b").css({"display":"none"});
+            $("#section-a").css({"display":"block"});
+            $("#section-g").css({"display":"block"});
+        });
+    
+        $(".second").click(function() {
+            $("#section-a").css({"display":"none"});
+            $("#section-b").css({"display":"block"});
+            $("#section-g").css({"display":"none"});
+        });
+    
+        $(".alll").click(function() {
+            $("#section-a").css({"display":"block"});
+            $("#section-b").css({"display":"block"});
+            $("#section-g").css({"display":"block"});
+        });
 
-    $(".alll").click(function() {
-        $("#section-a").css({"display":"block"});
-        $("#section-b").css({"display":"block"});
-        $("#section-g").css({"display":"block"});
+        // Форма отправки
+        $("#form").submit(function() {
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: $(this).serialize()
+            }).done(function() {
+                $(this).find("input").val("");
+                alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+                $("#form").trigger("reset");
+            });
+            return false;
+        });
     });
- 
 });
 
 // Відстеження активного меню

@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header id="start">
+        <div class="mobile-header mobile">
+            <div class="container">
+                <a href="#start" class="logo"><img src="img/mini-logo.png" alt="logo"></a>
+                <a href="#call-back" class="popup"><i class="fas fa-phone"></i></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                <i id="gamburger" class="fas fa-bars"></i>
+            </div>
+        </div>
         <div class="container container-top">
             <div class="top-header">
                 <div class="left">
@@ -26,8 +38,7 @@
                         <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
                     </div>
                 </div>
-                <div class="mouse"><a href="#section-phantom
-                    "><img src="img/mouse.png" alt="mouse"></a></div>
+                <div class="mouse"><a href="#navbar"><img src="img/mouse.png" alt="mouse"></a></div>
             </div>
         </div>
         <nav id="navbar">
@@ -44,12 +55,20 @@
                     <li><a href="#section-j">ПОРАДИ</a></li>
                     <li><a href="#section-k">КОНТАКТИ</a></li>
                 </ul>
+                <p class="fire"><a href="#advokat" class="popup mobile"><img src="img/fire.png" alt=""> Терміновий виїзд адвоката</a></p>
+                <div class="mobile mobile-social">
+                    <p>МИ В СОЦМЕРЕЖАХ</p>
+                    <div class="media-icon">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a></i>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></div></a>
+                </div>
             </div>
         </nav>
     </header>
-    <section id="section-phantom"></section>
     <section id="section-a">
         <div class="container business-guard">
+            <p class="mobile mfp">ПОСЛУГИ <i class="fas fa-arrow-right"></i> ДЛЯ БІЗНЕСУ</p>
             <div class="guard-left">
                 <h2>Захист і супровід вашого бізнесу</h2>
                 <p>Ми стоїмо на варті вашої справи й ділових інтересів – а ви розвиваєте, заробляєте та примножуєте.</p>
@@ -85,10 +104,14 @@
                     </div>
                 </div>
             </div>
+            <div class="consalt-button mobile">
+                <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
+            </div>
         </div>
     </section>
     <section id="section-b">
         <div class="container personal-guard">
+            <p class="mobile mfp">ПОСЛУГИ <i class="fas fa-arrow-right"></i> ДЛЯ ГРОМАДЯН</p>
             <div class="guard-left">
                     <h2>Захист ваших особистих інтересів</h2>
                     <p>Довірте нам захист ваших інтересів і переконайтеся в силі професійної правничої допомоги. </p>
@@ -132,6 +155,9 @@
                     </div>
                         
                     </div>
+                </div>
+                <div class="consalt-button mobile">
+                    <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
                 </div>
             </div>
     </section>
@@ -350,6 +376,9 @@
                     <p>Адвокатське та журналістське розслідування</p>
                 </div>
             </div>
+            <div class="consalt-button mobile">
+                <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
+            </div>
         </div>
     </section>
     <section id="section-j">
@@ -408,7 +437,7 @@
                         <a href="#">ОТРИМАТИ КОНСУЛЬТАЦІЮ</a>
                     </div>
                     <div class="call-button">
-                        <a href="#">ЗАМОВИТИ ДЗВІНОК</a>
+                        <a href="#call-back" class="popup">ЗАМОВИТИ ДЗВІНОК</a>
                     </div>
                 </div>
             </div>
@@ -480,10 +509,34 @@
                 </div>
             </div>
         </div>
+
+        <div id="call-back">
+            <h2>Замовити дзвінок</h2>
+            <p class="under_h2">Будь ласка, залиште ваші контактні дані, а ми зателефонуємо вам найближчим часом,</p>
+            <form id="form">
+                <div class="name">
+                    <p>ВАШЕ ІМ'Я</p>
+                    <input type="text" name="name" placeholder="Введіть текст" required>
+                </div>
+                <div class="phone">
+                    <p>ВАШ ТЕЛЕФОН</p>
+                    <input type="text" name="phone" placeholder="+380(__)___-__-__" required>
+                </div>
+                <div class="email">
+                    <p>ВАШ E-MAIL</p>
+                    <input type="email" name="email" placeholder="Введіть текст">
+                </div>
+                <div class="text">
+                    <p>ВАШ ЕОМЕНТАР</p>
+                    <textarea name="text" placeholder="Введіть текст"></textarea>
+                </div>
+                <button>НАДІСЛАТИ</button>
+            </form>
+        </div>
     </div>
 
 
-<script src="js/libs.min.js"></script>
+<!-- <script src="../app/libs/jquery/dist/jquery.min.js"></script> -->
 <script src="js/main.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
