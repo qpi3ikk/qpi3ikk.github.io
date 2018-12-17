@@ -20,6 +20,11 @@ jQuery(function($){
         $('#gamburger').toggleClass('fa-times');
         $('nav').toggleClass('show');
     });
+
+    $('li a').click(function() {
+        $('#gamburger').toggleClass('fa-times');
+        $('nav').toggleClass('show');
+    });
     
     // кнопка вверх
     $(window).scroll(function() {

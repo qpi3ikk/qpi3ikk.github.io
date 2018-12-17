@@ -976,8 +976,8 @@ nav {
     text-align: center;
     margin: 0 auto; }
     .consalt-button a {
-      font-size: 3.5vw;
-      padding: 2.5vh 4vw; }
+      font-size: 27px;
+      padding: 1em; }
   .active {
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
@@ -1014,8 +1014,8 @@ nav {
       top: 0;
       left: 0;
       background: #162837;
-      height: 10vh;
-      width: 101vw;
+      height: 100px;
+      width: 100vw;
       z-index: 2; }
       #start .mobile-header .container {
         display: grid;
@@ -1027,11 +1027,11 @@ nav {
         #start .mobile-header .container .logo {
           grid-column: 1/3; }
           #start .mobile-header .container .logo img {
-            height: 9.8vh; }
+            height: 95px; }
         #start .mobile-header .container i {
           cursor: pointer;
           color: #d6dee6;
-          font-size: 5.5vw; }
+          font-size: 6vw; }
     #start .container-top .top-header {
       background: none; }
       #start .container-top .top-header .left {
@@ -1045,26 +1045,26 @@ nav {
         #start .container-top .top-header .right h1 {
           padding-right: 0;
           font-size: 9vw;
-          padding-top: 18vh; }
+          padding-top: 3em; }
         #start .container-top .top-header .right p {
           padding-right: 0;
-          padding-top: 5vh;
+          padding-top: 1.5em;
           font-size: 3.5vw; }
         #start .container-top .top-header .right .consalt-button {
-          padding-top: 10vh; }
+          padding-top: 5em; }
       #start .container-top .top-header .mouse {
         display: none; }
     #start nav {
       display: none;
       position: fixed;
-      top: 10vh;
+      top: 100px;
       left: 0;
       width: 100vw;
       height: 100vh;
       background: #162837;
       z-index: 2; }
       #start nav .container {
-        padding-top: 7vh;
+        padding-top: 5em;
         padding-left: 7vw; }
         #start nav .container ul {
           list-style: none;
@@ -1084,8 +1084,7 @@ nav {
               padding-left: 3vw;
               padding-top: 1vw;
               padding-bottom: 0;
-              font-size: 3.5vw;
-              list-style-type: disc; }
+              font-size: 3.5vw; }
               #start nav .container ul li ul li a::before {
                 content: "•";
                 padding-right: 1vw;
@@ -1098,17 +1097,17 @@ nav {
             color: #d6dee6;
             font-size: 3.5vw; }
             #start nav .container .fire a img {
-              height: 2vh; }
+              height: 1em; }
       #start nav .mobile-social {
         color: #d6dee6;
-        padding-top: 4vh; }
+        padding-top: 3em; }
         #start nav .mobile-social p {
-          font-size: 2vh; }
+          font-size: 3vw; }
         #start nav .mobile-social .media-icon a {
           text-decoration: none;
           color: #d6dee6; }
           #start nav .mobile-social .media-icon a i {
-            font-size: 3vh;
+            font-size: 4.5vw;
             padding-top: 1vw;
             padding-right: 2vw; }
   #section-a {
@@ -1126,28 +1125,28 @@ nav {
               align-items: center; }
       #section-a .business-guard .guard-left h2 {
         padding-right: 0;
-        padding-top: 5vh; }
+        padding-top: 1em; }
       #section-a .business-guard .guard-left p {
         padding-right: 0;
         font-size: 4vw;
-        padding-bottom: 3vh; }
+        padding-bottom: 1em; }
       #section-a .business-guard .guard-left .consalt-button {
         display: none; }
       #section-a .business-guard .guard-right .guard-cards {
         display: grid;
         grid-template-columns: 45vw 45vw; }
         #section-a .business-guard .guard-right .guard-cards .guard-card {
-          font-size: 3vh;
-          height: 10vh; }
+          font-size: 15px;
+          height: 80px; }
           #section-a .business-guard .guard-right .guard-cards .guard-card img {
-            width: 5vw;
-            height: 5vw;
-            padding: 2vh 0 0 3vw; }
+            width: 70px;
+            height: 70px;
+            padding: 5px; }
           #section-a .business-guard .guard-right .guard-cards .guard-card h3 {
             padding-right: 0;
-            font-size: 2.5vw; }
+            font-size: 18px; }
       #section-a .business-guard .consalt-button {
-        margin: 9vh 0; }
+        margin: 6em 0; }
   #section-b {
     height: auto; }
     #section-b .personal-guard {
@@ -1157,25 +1156,26 @@ nav {
         padding-right: 0; }
         #section-b .personal-guard .guard-left h2 {
           padding-right: 0;
-          padding-top: 5vh; }
+          padding-top: 1em; }
         #section-b .personal-guard .guard-left p {
           padding-right: 0;
           font-size: 4vw;
-          padding-bottom: 3vh; }
+          padding-bottom: 1em; }
         #section-b .personal-guard .guard-left .consalt-button {
           display: none; }
       #section-b .personal-guard .guard-right .guard-cards .guard-card {
         display: grid;
         grid-template-columns: 20% 80%; }
         #section-b .personal-guard .guard-right .guard-cards .guard-card .img {
-          height: 9vh; }
+          height: 100px; }
           #section-b .personal-guard .guard-right .guard-cards .guard-card .img img {
-            height: 8vh;
-            width: auto; }
+            height: 90px;
+            width: auto;
+            padding: 5px; }
         #section-b .personal-guard .guard-right .guard-cards .guard-card h3 {
           font-size: 3.5vw; }
       #section-b .personal-guard .consalt-button {
-        margin: 9vh 0; }
+        margin: 6em 0; }
   #section-c {
     height: auto; }
     #section-c .container-wide {
@@ -1191,17 +1191,17 @@ nav {
           padding-right: 0; }
           #section-c .container-wide .about .about-left h2 {
             padding-right: 0;
-            padding-top: 5vh; }
+            padding-top: 1em; }
           #section-c .container-wide .about .about-left p {
             padding-right: 0;
             font-size: 4vw;
-            padding-bottom: 3vh; }
+            padding-bottom: 1em; }
           #section-c .container-wide .about .about-left img {
             display: none; }
         #section-c .container-wide .about .about-right {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-gap: 3vh 4vw; }
+          grid-gap: 30px; }
           #section-c .container-wide .about .about-right .about-block-a .head,
           #section-c .container-wide .about .about-right .about-block-a .head-d,
           #section-c .container-wide .about .about-right .about-block-b .head,
@@ -1213,7 +1213,7 @@ nav {
           #section-c .container-wide .about .about-right .about-block-b .inf,
           #section-c .container-wide .about .about-right .about-block-c .inf {
             font-size: 3vw;
-            padding-top: 1vh; }
+            padding-top: 0.5em; }
           #section-c .container-wide .about .about-right .about-block-a .head {
             font-size: 10vw; }
           #section-c .container-wide .about .about-right .about-block-b .head {
@@ -1234,11 +1234,11 @@ nav {
       grid-template-columns: 1fr; }
       #section-d .team .team-top .team-left h2 {
         padding-right: 0;
-        padding-top: 5vh; }
+        padding-top: 1em; }
       #section-d .team .team-top .team-left p {
         padding-right: 0;
         font-size: 4vw;
-        padding-bottom: 3vh; }
+        padding-bottom: 1em; }
       #section-d .team .team-top .team-left .consalt-button {
         display: none; }
       #section-d .team .team-top .team-right {
@@ -1253,29 +1253,35 @@ nav {
   #section-e {
     height: auto; }
     #section-e .cases .cases-top h2 {
-      padding-bottom: 3vh; }
+      padding-bottom: 1em; }
     #section-e .cases .cases-top p {
-      padding: 0; }
+      padding-right: 0;
+      font-size: 4vw;
+      padding-bottom: 1em; }
     #section-e .cases .cases-bottom .slickslider .case {
       pointer-events: none;
       width: 100%; }
       #section-e .cases .cases-bottom .slickslider .case .case-head {
-        font-size: 2vh; }
+        font-size: 30px; }
+      #section-e .cases .cases-bottom .slickslider .case h4 {
+        font-size: 18px; }
+      #section-e .cases .cases-bottom .slickslider .case p {
+        font-size: 18px; }
   #section-f {
     height: auto;
     padding-bottom: 4vh; }
     #section-f .prises .prises-top h2 {
       padding-right: 0;
-      padding-top: 5vh; }
+      padding-top: 1em; }
     #section-f .prises .prises-top p {
       font-size: 4vw;
-      padding-top: 6vh;
-      padding-bottom: 6vh;
+      padding-top: 2em;
+      padding-bottom: 1em;
       padding-right: 0; }
     #section-f .prises .prises-bottom .prises-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 5vh; }
+      grid-gap: 30px; }
       #section-f .prises .prises-bottom .prises-cards .prises-card {
         pointer-events: none;
         margin: 0;
@@ -1293,7 +1299,7 @@ nav {
             -ms-flex-align: center;
                 align-items: center;
         width: 41vw;
-        height: 45vh;
+        height: 60vw;
         border-right: 1px solid #d6dee67e;
         border-left: 1px solid #d6dee67e; }
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-head {
@@ -1303,7 +1309,7 @@ nav {
               -ms-flex-pack: center;
                   justify-content: center;
           width: 100.5%;
-          height: 10vh; }
+          height: 100px; }
           #section-f .prises .prises-bottom .prises-cards .prises-card .card-head h4 {
             font-size: 3.5vw; }
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-info {
@@ -1318,9 +1324,9 @@ nav {
           width: 41vw; }
           #section-f .prises .prises-bottom .prises-cards .prises-card .card-info i {
             font-size: 4vw;
-            margin: 1vh; }
+            margin: 2vw; }
           #section-f .prises .prises-bottom .prises-cards .prises-card .card-info p {
-            font-size: 1.8vw;
+            font-size: 2vw;
             width: auto; }
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-bottom {
           width: 41vw; }
@@ -1333,23 +1339,23 @@ nav {
         padding-top: 0; }
         #section-g .media .media-left h2 {
           padding-right: 0;
-          padding-top: 5vh;
+          padding-top: 1em;
           padding-bottom: 0; }
         #section-g .media .media-left p {
           font-size: 3vw;
-          padding: 3vh 0; }
+          padding: 1em 0; }
         #section-g .media .media-left .consalt-button {
           display: none; }
       #section-g .media .media-right {
-        padding-top: 3vh;
-        padding-bottom: 3vh; }
+        padding-top: 30px;
+        padding-bottom: 30px; }
         #section-g .media .media-right .media-card img {
           width: 15vw;
           height: 15vw; }
         #section-g .media .media-right .media-card p {
           font-size: 2.5vw; }
       #section-g .media .consalt-button {
-        margin: 9vh 0; }
+        margin: 6em 0; }
   #section-j {
     height: auto; }
     #section-j .advice .advice-top {
@@ -1357,11 +1363,11 @@ nav {
       grid-template-columns: 1fr; }
       #section-j .advice .advice-top .advice-top-left h2 {
         padding-right: 0;
-        padding-top: 5vh; }
+        padding-top: 1em; }
       #section-j .advice .advice-top .advice-top-left p {
         padding-right: 0;
         font-size: 4vw;
-        padding-bottom: 3vh; }
+        padding-bottom: 1em; }
       #section-j .advice .advice-top .advice-top-right {
         display: none; }
     #section-j .advice .advice-bottom {
@@ -1398,19 +1404,19 @@ nav {
           margin: 0 auto;
           padding: 0; }
           #section-k .k-top .contacts-top .contacts-top-right h2 {
-            padding-top: 5vh; }
+            padding-top: 1em; }
           #section-k .k-top .contacts-top .contacts-top-right p {
             font-size: 4vw;
-            padding-bottom: 3vh; }
+            padding-bottom: 1em; }
           #section-k .k-top .contacts-top .contacts-top-right .call-button {
-            padding-top: 8vh;
+            padding-top: 6em;
             text-align: center;
             padding-bottom: 10vw; }
             #section-k .k-top .contacts-top .contacts-top-right .call-button a {
               color: #e9c047;
               background: #fff;
-              font-size: 3.5vw;
-              padding: 2.5vh 4vw;
+              font-size: 27px;
+              padding: 1em;
               text-align: center;
               border: 2px solid #e9c047; }
     #section-k .k-bottom {
@@ -1418,20 +1424,20 @@ nav {
       #section-k .k-bottom .footer {
         grid-template-columns: 1fr 1fr; }
   #advokat {
-    height: 70vh;
+    height: 700px;
     width: 70vw;
     text-align: center;
-    padding-top: 5vh; }
+    padding-top: 2em; }
     #advokat h2 {
       font-size: 6vw;
       padding: 0;
-      padding-bottom: 5vh; }
+      padding-bottom: 1em; }
     #advokat p {
       font-size: 3vw;
       padding: 0;
       text-align: center;
       padding: 0 3vw;
-      padding-bottom: 5vh; }
+      padding-bottom: 2em; }
     #advokat .popup-info {
       width: 65vw; }
       #advokat .popup-info .popup-info-block {
@@ -1446,34 +1452,35 @@ nav {
         #advokat .popup-info .popup-info-block p {
           font-size: 3vw; }
     #advokat .popup-button {
-      padding-top: 10vh; }
+      padding-top: 6em; }
   #call-back {
-    height: 70vh;
+    height: 700px;
     width: 70vw;
     text-align: center;
-    padding-top: 3vh; }
+    padding-top: 2em; }
     #call-back h2 {
       font-size: 6vw;
       padding: 0;
-      padding-bottom: 3vh; }
+      padding-bottom: 1em; }
     #call-back .under_h2 {
       font-size: 3vw;
       padding: 0;
       text-align: center;
       padding: 0 3vw;
-      padding-bottom: 5vh; }
+      padding-bottom: 1em; }
     #call-back form {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: "name" "phone" "email" "text" "button"; }
       #call-back form p {
         color: #d6dee6;
-        font-size: 2.7vw;
+        font-size: 20px;
         text-align: left;
+        padding-top: 5px;
         padding-left: 20px;
         padding-bottom: 3px; }
       #call-back form input {
-        height: 4vh;
+        height: 40px;
         width: 65vw;
         margin: 0;
         padding-left: 0;
@@ -1486,20 +1493,30 @@ nav {
         font-size: 2.7vw; }
       #call-back form button {
         width: 50vw;
-        height: 8vh;
+        height: 80px;
         font-size: 4vw;
         color: #fff;
-        margin: 1vh auto;
+        margin: 10px auto;
         border: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .consalt-button {
+    text-align: center;
+    margin: 0 auto; }
+    .consalt-button a {
+      font-size: 15px;
+      padding: 1em; }
   #start .mobile-header {
     height: 60px;
-    width: 101vw;
+    width: 100vw;
     z-index: 2; }
     #start .mobile-header .container .logo img {
       height: 55px; }
+  nav {
+    display: none;
+    position: fixed;
+    top: 60px !important; }
   #section-a .business-guard .guard-right .guard-cards {
     display: grid;
     grid-template-columns: 1fr; }
@@ -1566,6 +1583,10 @@ nav {
           width: auto; }
       #section-f .prises .prises-bottom .prises-cards .prises-card .card-bottom {
         width: 100%; }
+  #section-k .k-top .contacts-top .contacts-top-right .call-button {
+    padding-top: 4em; }
+    #section-k .k-top .contacts-top .contacts-top-right .call-button a {
+      font-size: 16px; }
   #advokat {
     height: 420px;
     width: 270px;
@@ -1589,6 +1610,8 @@ nav {
           font-size: 13px; }
     #advokat .popup-button {
       padding-top: 15px; }
+      #advokat .popup-button .consalt-button {
+        font-size: 15px !important; }
   #call-back {
     height: 420px;
     width: 270px; }
