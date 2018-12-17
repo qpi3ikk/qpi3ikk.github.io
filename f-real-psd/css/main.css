@@ -1269,7 +1269,7 @@ nav {
         font-size: 18px; }
   #section-f {
     height: auto;
-    padding-bottom: 4vh; }
+    padding-bottom: 3em; }
     #section-f .prises .prises-top h2 {
       padding-right: 0;
       padding-top: 1em; }
@@ -1388,7 +1388,7 @@ nav {
         padding-top: 20vw; }
         #section-j .advice .advice-bottom .see-all .see-button a {
           font-size: 3.5vw;
-          padding: 2.5vh 4vw; }
+          padding: 1.5em; }
   #section-k {
     height: auto; }
     #section-k .k-top {
@@ -1486,7 +1486,7 @@ nav {
         padding-left: 0;
         font-size: 2.7vw; }
       #call-back form textarea {
-        height: 12vh;
+        height: 120px;
         width: 65vw;
         margin: 0;
         padding-left: 0;
@@ -1527,11 +1527,11 @@ nav {
         width: auto;
         padding: 5px 0 0 5px; }
       #section-a .business-guard .guard-right .guard-cards .guard-card h3 {
-        padding-top: 1vh;
+        padding-top: 10px;
         padding-right: 0;
         font-size: 15px; }
   #section-a .business-guard .consalt-button {
-    margin: 9vh 0; }
+    margin: 4em 0 0 0; }
   #section-b .personal-guard .guard-right .guard-cards {
     padding: 0; }
     #section-b .personal-guard .guard-right .guard-cards .guard-card {
@@ -1546,7 +1546,7 @@ nav {
         font-size: 15px;
         padding-top: 10px; }
   #section-b .personal-guard .consalt-button {
-    margin: 9vh 0; }
+    margin: 4em 0 0 0; }
   #section-f .prises .prises-bottom .prises-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -1577,7 +1577,7 @@ nav {
         width: 100%; }
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-info i {
           font-size: 20px;
-          margin: 1vh; }
+          margin: 0.5em; }
         #section-f .prises .prises-bottom .prises-cards .prises-card .card-info p {
           font-size: 14px;
           width: auto; }
