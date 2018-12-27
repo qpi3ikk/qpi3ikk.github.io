@@ -8,7 +8,7 @@ body, html {
 	padding: 0;
 }
 .bgimg {
-	background: url(video.JPG);
+	background: url(Images/video.jpg);
 	height: 100%;
 	background-position: center;
 	-webkit-background-size: cover;
