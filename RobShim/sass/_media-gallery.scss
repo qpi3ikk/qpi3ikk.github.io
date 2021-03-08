@@ -1,0 +1,258 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1600px) {
+}
+
+@media only screen and (max-width: 1366px) {
+  h2 {
+    font-size: 36px;
+    padding: 0;
+  }
+  //Хедер
+  header {
+    nav {
+      height: 45px;
+      .head-container {
+        a {
+          font-size: 20px;
+        }
+        .logo {
+          img {
+            height: 39px;
+            padding-top: 3px;
+          }
+        }
+        .menu {
+          ul {
+            margin-top: 10px;
+          }
+        }
+        .social {
+          a {
+            i {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //футер
+  #footer .footer-block .container h3 {
+    font-size: 24px;
+    padding: 0;
+  }
+  #footer .footer-block .container p {
+    font-family: Roboto-Italic;
+    font-size: 17px;
+  }
+  #footer .footer-block .container .footer-left img {
+    height: 70px;
+  }
+  #footer .footer-block .container .footer-right .info-p {
+    font-size: 21px;
+  }
+  #footer .footer-block .container .footer-right .made {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  #footer .footer-block .container .footer-right img {
+    margin-top: 10px;
+    height: 41px;
+    padding-left: 10px;
+    margin-bottom: -11px;
+  }
+  #footer .footer-block .container .footer-right {
+    grid-column: 7 / 13;
+  }
+
+  #footer .footer-block .container .footer-right .info-p a {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #footer .footer-block .container .footer-right .info-p a {
+    font-size: 20px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .show {
+    display: block !important;
+  }
+  header {
+    nav {
+      height: 65px;
+      .head-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        a {
+          font-size: 22px;
+        }
+        .logo {
+          grid-column: 2 / 4;
+          img {
+            height: 55px;
+            padding-top: 5px;
+          }
+        }
+        .menu {
+          grid-column: 1 / 13;
+          grid-row-start: 2;
+          width: 100%;
+          display: none;
+          transition: 0.3s ease;
+          ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: $accent;
+            margin: 0;
+            li {
+              padding: 5vh 0;
+              a {
+                font-size: 33px;
+              }
+            }
+          }
+        }
+        .social {
+          grid-column: 9 / 12;
+          a {
+            i {
+              font-size: 32px;
+            }
+            &:hover {
+              box-shadow: none;
+            }
+          }
+        }
+        .menu-icon {
+          grid-column: 12 / 13;
+          display: block;
+          color: $mbg;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  #footer .footer-block .container .footer-right .info-p a {
+    font-size: 19px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    nav {
+      height: 65px;
+      .head-container {
+        .social {
+          grid-column: 8 / 12;
+          a {
+            i {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #gallery {
+    .gallery-block {
+      display: grid;
+      grid-template-columns: repeat(12, 7vw);
+      grid-auto-rows: 6vw;
+      grid-gap: 0.54vw;
+    }
+  }
+
+  #footer {
+    .footer-block {
+      background-size: cover;
+      .container {
+        .footer-left {
+          grid-column: 1 / 12;
+        }
+        .footer-right {
+          grid-column: 1 / 12;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    nav {
+      height: 65px;
+      .head-container {
+        .social {
+          grid-column: 7 / 12;
+          a {
+            i {
+              font-size: 25px;
+              padding-top: 0.7em;
+            }
+          }
+        }
+        .menu-icon {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
