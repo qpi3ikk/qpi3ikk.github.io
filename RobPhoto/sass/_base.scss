@@ -1,0 +1,17 @@
+@import "vars";
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: $mbg;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

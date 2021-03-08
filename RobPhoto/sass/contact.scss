@@ -1,0 +1,248 @@
+@import "fonts";
+@import "libs";
+@import "base";
+@import "vars";
+
+h2 {
+  font-family: Roboto-Bold;
+  font-size: 43px;
+  color: $accent;
+}
+.button-container {
+  width: 90%;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  .btn {
+    background: $accent;
+    color: $mbg;
+    border: 4px solid $accent;
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    padding: 0.8em 2em;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background: $mbg;
+      color: $accent;
+      transition: 0.3s ease;
+    }
+  }
+}
+
+header {
+  height: 65px;
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: $accent;
+    z-index: 500;
+    .head-container {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        color: $mbg;
+        font-family: Roboto-Bold;
+        font-size: 26px;
+        &:hover {
+          color: $card-head;
+          box-shadow: 0px 5px 0px 0px rgba(191, 151, 136, 1);
+          transition: 0.3s ease;
+        }
+      }
+      .logo {
+        img {
+          height: 55px;
+          padding-top: 5px;
+        }
+      }
+      .menu {
+        opacity: 1;
+        width: 60%;
+        ul {
+          padding-inline-start: 0;
+          display: flex;
+          justify-content: space-between;
+          list-style: none;
+          li {
+            &:last-child {
+              a {
+                color: $card-head;
+              }
+            }
+          }
+        }
+      }
+      .social {
+        a {
+          i {
+            padding-top: 0.5em;
+            font-size: 32px;
+            padding-left: 0.4em;
+          }
+          &:hover {
+            box-shadow: none;
+          }
+        }
+      }
+      .menu-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+#call {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  #call-back {
+    grid-column: 1 / 7;
+    h4 {
+      font-family: Roboto-Bold;
+      font-size: 1.5rem;
+      color: $accent;
+    }
+    form {
+      p {
+        font-family: Roboto-Italic;
+        font-size: 1.3rem;
+        color: $accent;
+        margin-bottom: 0;
+        padding-left: 1em;
+      }
+      input {
+        font-family: Roboto-Italic;
+        height: 3rem;
+        width: 90%;
+        border: 3px solid $accent;
+        border-radius: 7px;
+        font-size: 1.5rem;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        height: 9rem;
+        width: 90%;
+        border: 3px solid $accent;
+        border-radius: 7px;
+        font-family: Roboto-Italic;
+        font-size: 1.5rem;
+        resize: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        background: $accent;
+        color: $mbg;
+        border: 4px solid $accent;
+        font-family: Roboto-Bold;
+        font-size: 1.2rem;
+        padding: 0.8em 3em;
+        border-radius: 6px;
+        transition: 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        &:hover {
+          background: $mbg;
+          color: $accent;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+  .contact-block {
+    grid-column: 8 / 12;
+    color: $accent;
+    h3 {
+      font-family: Roboto-Italic;
+      font-size: 2rem;
+      margin-top: 2em;
+      margin-left: 1em;
+    }
+    p {
+      font-family: Roboto-Italic;
+      font-size: 1.8rem;
+      margin: .2em;
+    }
+  }
+}
+
+#footer {
+  height: auto;
+  background-color: $accent;
+  .footer-block {
+    height: auto;
+    background-image: url(../img/slide.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    .container {
+      color: $mbg;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 30px;
+      h3 {
+        font-family: Roboto-Bold;
+        font-size: 28px;
+        padding: 0.4em 0;
+      }
+      p {
+        font-family: Roboto-Italic;
+        font-size: 23px;
+      }
+      .footer-left {
+        grid-column: 1 / 5;
+        img {
+          height: 90px;
+        }
+      }
+      .footer-right {
+        grid-column: 7 / 12;
+        h3 {
+          padding-bottom: 0;
+        }
+        .info-p {
+          font-family: Roboto-Italic;
+          font-size: 31px;
+          margin: 0.2em;
+          i {
+            padding-right: 0.5em;
+          }
+          a {
+            text-decoration: none;
+            font-family: Roboto-Italic;
+            font-size: 31px;
+            color: $mbg;
+            margin: 0.2em;
+          }
+        }
+        .made {
+          font-size: 16px;
+          display: inline-block;
+          padding-bottom: 5px;
+        }
+        img {
+          height: 50px;
+          padding-left: 5px;
+          margin-bottom: -10px;
+        }
+      }
+    }
+  }
+}
+
+@import "media-contact";
