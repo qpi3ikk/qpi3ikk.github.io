@@ -1,0 +1,26 @@
+{
+  "name": "gulp-start",
+  "version": "1.0.0",
+  "description": "strt gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mishka Pylyp",
+  "license": "ISC",
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}
